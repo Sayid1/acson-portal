@@ -214,7 +214,15 @@
   font-size: 45px;
   line-height: 45px;
 }
-
+@media only screen and (min-width: 991px) {
+  .product-carousel {
+    padding-right: 100px;
+    box-sizing: content-box;
+  }
+  .product-carousel .owl-stage-outer {
+    width: calc(100% + 100px);
+  }
+}
 .product-carousel.owl-nav-style-one.owl-theme .owl-nav {
   position: absolute;
   top: -120px;
@@ -223,7 +231,14 @@
 .product-carousel.owl-nav-style-one.owl-theme .owl-nav [class*="owl-"]:before {
   border-color: var(--thm-base);
 }
-
+@media only screen and (max-width: 767px) {
+  .product-carousel.owl-nav-style-one.owl-theme .owl-nav {
+    top: -120px;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+}
 .service-style1__bottom-text {
   position: relative;
   display: block;

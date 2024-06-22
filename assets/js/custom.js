@@ -365,6 +365,7 @@ if ($(".banner-carousel").length) {
     },
   });
 }
+const documentWidth = $(document).width();
 
 // Product Carousel
 if ($(".product-carousel").length) {
@@ -376,7 +377,7 @@ if ($(".product-carousel").length) {
     stagePadding: 0,
     singleItem: true,
     smartSpeed: 500,
-    autoplay: true,
+    autoplay: documentWidth < 851,
     autoplayTimeout: 3000,
     navText: [
       '<span class="flaticon-down-arrow-2 left btn-one"></span>',
@@ -394,9 +395,11 @@ if ($(".product-carousel").length) {
       },
       991: {
         items: 2,
+        slideBy: 2,
       },
       1300: {
         items: 3,
+        slideBy: 2,
       },
     },
   });
