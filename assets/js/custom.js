@@ -850,6 +850,60 @@ if ($("#contact-form").length) {
     },
   });
 }
+const dropZoneElement = document.getElementById("drop_zone");
+const uploadFiles = [];
+if (dropZoneElement) {
+  const fileNameDisplayElement = document.getElementById("fileNameDisplay");
+  ["dragleave", "dragend"].forEach((type) => {
+    dropZoneElement.addEventListener(type, (e) => {
+      dropZoneElement.classList.add("border-dashed");
+    });
+  });
+  dropZoneElement.addEventListener("dragover", function (ev) {
+    dropZoneElement.classList.remove("border-dashed");
+    ev.preventDefault();
+  });
+  dropZoneElement.addEventListener("drop", function (ev) {
+    ev.preventDefault();
+    const len = $(fileNameDisplayElement).children().length;
+    if (ev.dataTransfer.files.length && len < 3) {
+      appendFile(ev.dataTransfer.files);
+      dropZoneElement.classList.add("border-dashed");
+    }
+  });
+  $(document).on("change", ".file-input", function () {
+    appendFile(this.files);
+  });
+
+  function appendFile(files) {
+    let html = "";
+    const len = $("#fileNameDisplay").children().length;
+    $.each(files, function (index, file) {
+      if (len + index < 3) {
+        uploadFiles.push(file);
+        html += `<div class="d-flex align-items-center py-1">
+        <span class="mr-2">${file.name}</span>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-index=${index} class="remove-file" style="width: 1.25rem;height:1.25rem;color:rgb(75 85 99);cursor:pointer;">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </div>`;
+      }
+    });
+
+    $("#fileNameDisplay").append(html);
+  }
+
+  // 删除文件
+  $(document).on("click", ".remove-file", function () {
+    const index = $(this).parent().index();
+    uploadFiles.splice(index, 1);
+    $("#fileNameDisplay").children().eq(index).remove();
+  });
+  // 点击按钮触发文件上传
+  $(document).on("click", "#file-upload", function () {
+    $("input[type=file]").trigger("click");
+  });
+}
 
 //Search Popup
 if ($("#search-popup").length) {

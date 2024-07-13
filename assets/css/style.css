@@ -246,8 +246,7 @@ li {
   z-index: 1;
 }
 
-.btn-one:hover,
-.btn-one:focus {
+.btn-one:hover {
   color: #ffffff;
 }
 
@@ -7978,4 +7977,13 @@ select:focus {
 ***/
 .about-style1-area.one-page-scrool {
   padding-bottom: 0;
+}
+.drop_zone {
+  border-width: 2px;
+  border-color: #e5e5e5;
+  padding: 12px 0;
+  border-style: solid;
+}
+.border-dashed {
+  border-style: dashed;
 }
