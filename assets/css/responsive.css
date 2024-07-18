@@ -2058,9 +2058,14 @@
   }
 
   .product-quantity-box {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-
+  .product-quantity-box .btn-one.two {
+    margin-top: 10px;
+  }
   .product-quantity-box .right {
     margin-top: 10px;
     padding-left: 0px;
@@ -2069,7 +2074,9 @@
   .review-form {
     padding: 53px 30px 60px;
   }
-
+  .review-form .btn-one[type="submit"] {
+    width: 100%;
+  }
   .product-tab-box .review-form .button-box {
     display: block;
   }

@@ -2445,10 +2445,10 @@ select:focus {
 }
 
 .single-project-item.style2 .overlay-content {
-  top: 30px;
-  left: 30px;
-  bottom: 30px;
-  right: 30px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .single-project-item .img-holder {
@@ -2488,7 +2488,7 @@ select:focus {
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
-  background: rgba(var(--thm-black-rgb), 0.94);
+  background: rgba(0,0,0, 0.75);
   padding: 0 35px;
   overflow: hidden;
   z-index: 5;
@@ -2576,7 +2576,7 @@ select:focus {
   position: relative;
   display: block;
   overflow: hidden;
-  padding-top: 40px;
+  /* padding-top: 40px; */
   opacity: 0;
   transform: translateY(50px);
   transition: all 700ms ease;
@@ -6665,7 +6665,17 @@ select:focus {
   position: relative;
   display: block;
 }
-
+.product-quantity-box .btn-one {
+  width: 195px;
+  margin-left: 6px;
+}
+.product-quantity-box .btn-one.two {
+  color: #fff;
+}
+.product-quantity-box .btn-one.two:after {
+  border: 2px solid var(--thm-base);
+  background-color: var(--thm-base);
+}
 .product-quantity-box .right .button {
   position: relative;
   display: flex;
