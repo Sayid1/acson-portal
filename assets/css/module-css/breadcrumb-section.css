@@ -123,6 +123,9 @@
 .non-illuminate-metal-letters-bg {
   background-image: url(../../images/breadcrumb/head-non-illuminate-metal-letters.webp);
 }
+.light-box-letters-bg {
+  background-image: url(../../images/breadcrumb/LIGHTBOX-DRAFTED-ABOUT-SIGNS.webp);
+}
 @media only screen and (max-width: 767px) {
   .backlit-channel-letter-bg {
     background-image: url(../../images/breadcrumb/head-mobile-backlit-channel-letter.webp?v=3);
