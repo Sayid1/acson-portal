@@ -6380,7 +6380,7 @@ select:focus {
   position: relative;
   display: block;
   background: #ffffff;
-  padding: 120px 0 90px;
+  padding: 120px 0 0;
 }
 
 .product-details-image-box {
@@ -8130,5 +8130,111 @@ select:focus {
   .col-md-2-4 {
     flex: 0 0 20%;
     max-width: 20%;
+  }
+}
+.container-1920 {
+  max-width: 1920px;
+}
+/* 段落大标题 start */
+.typography-ps-headline-super {
+  font-size: 80px;
+  line-height: 1.05;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+@media (max-width: 1068px) {
+  .typography-ps-headline-super {
+    font-size: 64px;
+    line-height: 1.0625;
+    font-weight: 600;
+    letter-spacing: -0.009em;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+  }
+}
+@media (max-width: 734px) {
+  .typography-ps-headline-super {
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: 0em;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+  }
+}
+/* 段落大标题 end */
+
+/* 段落小标题 start */
+.typography-headline-reduced {
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: 0em;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+  margin-bottom: 32px;
+}
+@media (max-width: 1068px) {
+  .typography-headline-reduced {
+    font-size: 32px;
+    line-height: 1.125;
+    font-weight: 600;
+    letter-spacing: .004em;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+  }
+}
+@media (max-width: 734px) {
+  .typography-headline-reduced {
+    font-size: 28px;
+    line-height: 1.1428571429;
+    font-weight: 600;
+    letter-spacing: .007em;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+  }
+}
+/* 段落小标题 end */
+
+
+/* 段落文字 start */
+.typography-ps-intro-semibold {
+  font-size: 21px;
+  line-height: 1.381002381;
+  font-weight: 600;
+  letter-spacing: .011em;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.typography-ps-intro-semibold strong {
+  color: #1d1d1f;
+}
+@media (max-width: 1068px) {
+  .typography-ps-intro-semibold {
+    font-size: 17px;
+    line-height: 1.4705882353;
+    font-weight: 600;
+    letter-spacing: -0.022em;
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+  }
+}
+@media (max-width: 734px) {
+  .typography-ps-intro-semibold {
+    font-size: 19px;
+    line-height: 1.2105263158;
+    font-weight: 600;
+    letter-spacing: .012em;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+  }
+}
+/* 段落文字 end */
+
+@media (min-width: 1900px) {
+  .col-xxxl-6 {
+    flex: 0 0 auto;
+    width: 16.6667%; /* 1/6 */
+  }
+}
+
+/* 自定义 1536px 及以上的断点 */
+@media (min-width: 1536px) {
+  .col-xxl-5 {
+    flex: 0 0 auto;
+    width: 20%; /* 1/5 */
   }
 }
