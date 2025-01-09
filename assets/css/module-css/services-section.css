@@ -81,7 +81,7 @@
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: #1c1c27;
+  background-color: var(--thm-bg);
   background-repeat: repeat;
   z-index: -1;
 }
@@ -719,7 +719,7 @@
   position: relative;
   padding-left: 70px;
   padding-right: 20px;
-  background: #1c1c27;
+  background: var(--thm-bg);
   display: flex;
   flex-direction: row;
   justify-content: space-between;

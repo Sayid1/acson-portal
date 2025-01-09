@@ -168,7 +168,7 @@
   left: -10000000px;
   bottom: 0;
   right: 0;
-  background: #1c1c27;
+  background: var(--thm-bg);
   z-index: -1;
 }
 
@@ -424,7 +424,7 @@
   position: relative;
   display: block;
   padding: 25px 0px 25px;
-  color: #1c1c27;
+  color: var(--thm-bg);
   font-size: 16px;
   line-height: 30px;
   font-weight: 600;

@@ -16,11 +16,12 @@
 **********************************************/
 
 :root {
-  --thm-font: "Be Vietnam", sans-serif;
-  --thm-font-2: "Inter", sans-serif;
+  /* --thm-font: "Be Vietnam", sans-serif;
+  --thm-font-2: "Inter", sans-serif; */
   --thm-gray: #757575;
   --thm-black: #1e1e2a;
   --thm-black-rgb: 30, 30, 42;
+  --thm-bg: #1c1c27;
 }
 
 /*==============================================
@@ -1698,7 +1699,7 @@ select:focus {
   bottom: 0;
   width: 100%;
   max-width: 365px;
-  background-color: #1c1c27;
+  background-color: var(--thm-bg);
   overflow: hidden;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
@@ -2053,7 +2054,7 @@ select:focus {
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: #1c1c27;
+  background-color: var(--thm-bg);
   background-repeat: repeat;
   z-index: -1;
 }
@@ -2117,7 +2118,7 @@ select:focus {
   left: 0;
   bottom: 0;
   right: 0;
-  background: #1c1c27;
+  background: var(--thm-bg);
   opacity: 0.92;
 } */
 
@@ -3316,7 +3317,7 @@ select:focus {
   max-width: 570px;
   width: 100%;
   margin: 0 auto;
-  background: #1c1c27;
+  background: var(--thm-bg);
   padding: 60px 50px 60px;
   text-align: center;
 }
@@ -6136,7 +6137,7 @@ select:focus {
 }
 
 .shop-page-top-info_inner .right-box .text p {
-  color: #1c1c27;
+  color: var(--thm-bg);
   margin: 0;
 }
 
@@ -6552,7 +6553,7 @@ select:focus {
 .product-details-content-box .product-info ul li .inner .title h5 {
   position: relative;
   display: inline-block;
-  color: #1c1c27;
+  color: var(--thm-bg);
   font-size: 16px;
   line-height: 26px;
   font-weight: 600;
@@ -6610,7 +6611,7 @@ select:focus {
   width: 50px;
   flex: none;
   height: 60px;
-  color: #1c1c27;
+  color: var(--thm-bg);
   font-size: 18px;
   font-weight: 600;
   border: 1px solid #e5e5e5;
@@ -7152,7 +7153,7 @@ select:focus {
 }
 
 .cart-info .right {
-  color: #1c1c27;
+  color: var(--thm-bg);
 }
 
 .cart-info .right span {
@@ -7189,7 +7190,7 @@ select:focus {
 }
 
 .cart-table-box .cart-table thead tr th {
-  color: #1c1c27;
+  color: var(--thm-bg);
   font-size: 18px;
   line-height: 24px;
   font-weight: 600;
@@ -7987,7 +7988,7 @@ select:focus {
   width: 50px;
   height: 50px;
   border: 1px solid #e5e5e5;
-  color: #1c1c27;
+  color: var(--thm-bg);
   font-size: 16px;
   line-height: 48px;
   text-align: center;
